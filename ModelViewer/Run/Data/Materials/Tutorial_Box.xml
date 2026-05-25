@@ -1,0 +1,9 @@
+<Material
+  name="Tutorial_Box"
+  shader="Data/Shaders/Phong"
+  vertexType="Vertex_PCUTBN"
+  diffuseTexture="Data/Images/Tutorial_Box_Diffuse.tga"
+  normalTexture="Data/Images/Tutorial_Box_Normal.tga"
+  specGlossEmitTexture="Data/Images/Tutorial_Box_SpecGlossEmit.tga"
+  color="255,255,255,255"
+/>

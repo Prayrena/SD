@@ -1,0 +1,31 @@
+<GameConfig
+	world_size_x="20"
+	world_size_y="10"
+	screen_size_x="1600"
+	screen_size_y="800"
+
+	playerBulletSpeed ="7.0"
+	enemyBulletSpeed ="6.0"
+	enemyMissileLinearSpeed ="4.0"
+	enemyMissileAngularSpeed ="120.0"
+	enemyFlameLinearSpeed ="0.6"
+	enemyFlameAngularSpeed ="90.0"
+	playerFlameLinearSpeed ="1.8"
+	playerFlameAngularSpeed ="120.0"
+	
+	playerCanSwim = "false"
+	playerTankLinearSpeed="2.0"
+
+	leoAngularSpeed = "150"
+	leoLinearSpeed = "0.75"
+
+	ariesAngularSpeed = "60"
+	ariesLinearSpeed = "0.6"
+	
+	capricornCanSwim="true"
+	capricornAngularSpeed = "60"
+	capricornLinearSpeed = "0.6"
+/>
+
+
+

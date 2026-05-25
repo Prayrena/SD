@@ -1,0 +1,9 @@
+<Material
+  name="M_Player_Mace"
+  shader="Phong"
+  vertexType="Vertex_PCUTBN"
+  diffuseTexture="Data/Textures/Mace_Diffuse.png"
+  normalTexture="Data/Textures/Mace_Normal.png"
+  specGlossEmitTexture="Data/Textures/Mace_SpecGlossEmiss.png"
+  color="255,255,255,255"
+/>

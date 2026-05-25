@@ -1,0 +1,9 @@
+<Material
+  name="M_Player_Gear"
+  shader="Phong"
+  vertexType="Vertex_PCUTBN"
+  diffuseTexture="Data/Textures/Gears_T1_Diffuse.jpg"
+  normalTexture="Data/Textures/Gears_T1_Normal.jpg"
+  specGlossEmitTexture="Data/Textures/Gears_T1_SpecGlossEmiss.png"
+  color="255,255,255,255"
+/>

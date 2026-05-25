@@ -1,0 +1,3 @@
+<Model name="Crawler_Head" path="Data/Models/Crawler_Head.obj" material="Data/Materials/M_Crawler.xml">
+  <Transform x="1,0,0" y="0,1,0" z="0,0,1" t="0,0,0" scale="0.2"/>
+</Model>

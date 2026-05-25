@@ -1,0 +1,1 @@
+<Material name="Cube_Emissive" shader="Data/Shaders/Phong" vertexType="Vertex_PCUTBN" diffuseTexture="Data/Images/Cube_Textured_Diffuse.png" normalTexture="Data/Images/Cube_Textured_Normal.png" specGlossEmitTexture="Data/Images/Cube_Emissive_SpecGlossEmit.png" color="255,255,255,255"/>

@@ -1,0 +1,9 @@
+<Material
+  name="M_Player_Connector_T2"
+  shader="Phong"
+  vertexType="Vertex_PCUTBN"
+  diffuseTexture="Data/Textures/Connector_T2_color.jpg"
+  normalTexture="Data/Textures/Connector_T2_normal.jpg"
+  specGlossEmitTexture="Data/Textures/Connector_T2_SpecGlossEmiss.png"
+  color="255,255,255,255"
+/>

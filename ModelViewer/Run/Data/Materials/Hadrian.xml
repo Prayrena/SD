@@ -1,0 +1,1 @@
+<Material name="Hadrian" shader="Data/Shaders/Phong" vertexType="Vertex_PCUTBN" diffuseTexture="Data/Images/Hadrian_Diffuse.png" normalTexture="Data/Images/Hadrian_Normal.png" specGlossEmitTexture="Data/Images/Hadrian_SpecGlossEmit.png" color="255,255,255,255"/>

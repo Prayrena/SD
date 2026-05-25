@@ -1,0 +1,9 @@
+{
+    "api_layer": {
+        "name": "XR_APILAYER_LUNARG_test_badjson_file_ver_missing",
+        "library_path": "D:/HelloWorldTest/src/tests/loader_test/test_layers/XrApiLayer_test.dll",
+        "api_version": "1.1",
+        "implementation_version": "1",
+        "description": "Test_description"
+    }
+}

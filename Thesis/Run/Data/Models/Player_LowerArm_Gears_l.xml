@@ -1,0 +1,3 @@
+<Model name="Player_LowerArm_Gears_l" path="Data/Models/Player_LowerArm_Gears_l.obj" material="Data/Materials/M_Player_Gear.xml">
+  <Transform x="1,0,0" y="0,1,0" z="0,0,1" t="0,0,0" scale="0.5"/>
+</Model>

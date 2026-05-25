@@ -1,0 +1,67 @@
+# Visual Studio workspace files
+.vs/
+**/.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Build output
+**/Temporary/
+**/x64/
+**/Win32/
+**/[Dd]ebug/
+**/[Rr]elease/
+**/[Rr]elWithDebInfo/
+**/[Mm]inSizeRel/
+**/Generated/
+**/Intermediate/
+**/Binaries/
+**/Binary/
+**/Build/
+
+# MSVC generated files
+*.aps
+*.exp
+*.iobj
+*.ipch
+*.ipdb
+*.ilk
+*.lastbuildstate
+*.pch
+*.pdb
+*.recipe
+*.tlog
+*.vc.db
+*.vc.opendb
+
+# CMake generated files
+**/CMakeFiles/
+**/CMakeCache.txt
+**/cmake_install.cmake
+**/CTestTestfile.cmake
+**/install_manifest.txt
+
+# Third-party in-source build output
+Engine/Code/ThirdParty/Physx/compiler/vc17win64/
+Engine/Code/ThirdParty/OpenXR/**/*.vcxproj
+Engine/Code/ThirdParty/OpenXR/**/*.vcxproj.filters
+Engine/Code/ThirdParty/OpenXR/**/*.vcxproj.user
+Engine/Code/ThirdParty/OpenXR/**/*.sln
+Engine/Code/ThirdParty/OpenXR/**/*.dir/
+Engine/Code/ThirdParty/OpenXR/**/*.dll
+Engine/Code/ThirdParty/OpenXR/**/*.lib
+
+# Built game executables
+**/Run/*.exe
+
+# Logs and temporary files
+*.log
+*.tmp
+*.temp
+*.bak
+*.orig
+
+# OS files
+Thumbs.db
+Desktop.ini

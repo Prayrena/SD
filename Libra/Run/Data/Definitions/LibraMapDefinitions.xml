@@ -1,0 +1,74 @@
+<MapDefinitions>
+
+	<MapDefinition
+		name="highland"
+		dimensions="30,30"
+		edgeTileType="StoneWall"
+		fillTileType="YellowGrass"
+		startFloorTileType="Paved"
+		startBunkerWallTileType="StoneWall"
+		endFloorTileType="Paved"
+		endBunkerWallTileType="StoneWall"
+		mapEntry ="MapEntry"
+		mapExit ="MapExit"
+		
+		worm1TileType="ShortGrass"	worm1Count="18"	worm1MaxLength="8"
+		worm2TileType="StoneWall"	worm2Count="30"	worm2MaxLength="15"
+		
+		leoCount="3"
+		ariesCount="3"
+		scorpioCount="3"
+		taurusCount="0"
+		capricornCount="0"
+		sagittariusCount="0"
+   />
+
+	<MapDefinition
+		name="northPole"
+		dimensions="40,20"
+		edgeTileType="WaterBrick"
+		fillTileType="IceSurface"
+		startFloorTileType="Paved"
+		startBunkerWallTileType="IronWall"
+		endFloorTileType="Paved"
+		endBunkerWallTileType="IronWall"
+		mapEntry ="MapEntry"
+		mapExit ="MapExit"
+		
+		worm2TileType="WaterSurface"	worm2Count="21"	worm2MaxLength="10"
+		worm1TileType="IceCube"			worm1Count="18"	worm1MaxLength="8"
+		
+		leoCount="4"
+		ariesCount="4"
+		scorpioCount="4"
+		taurusCount="0"
+		capricornCount="2"
+		sagittariusCount="0"
+   />
+
+	<MapDefinition
+		name="insideVolcano"
+		dimensions="20,40"
+		edgeTileType="Cobble"
+		fillTileType="UndergroundRockfloor"
+		startFloorTileType="PaleRedBrick"
+		startBunkerWallTileType="GoldenBrick"
+		endFloorTileType="PaleRedBrick"
+		endBunkerWallTileType="GoldenBrick"
+		mapEntry ="MapEntry"
+		mapExit ="MapExit"
+		
+		worm1TileType="Lava"	worm1Count="18"	worm1MaxLength="8"
+		worm2TileType="Cobble"	worm2Count="27"	worm2MaxLength="10"
+		
+		leoCount="0"
+		ariesCount="0"
+		scorpioCount="5"
+		taurusCount="0"
+		capricornCount="5"
+		sagittariusCount="0"
+   />
+
+</MapDefinitions>
+
+

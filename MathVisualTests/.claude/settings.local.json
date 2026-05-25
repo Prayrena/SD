@@ -1,0 +1,20 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(mkdir -p /c/Users/Cheng/.claude/skills/conversationSumup)",
+      "Bash(mkdir -p /d/Claude/Skills)",
+      "Bash(grep -E \"\\\\.\\(cpp|hpp\\)$\")",
+      "Bash(find D:CodeReferenceSD -type f -name *XML*)",
+      "Skill(conversationSumup)",
+      "Bash(start:*)",
+      "Bash(explorer:*)",
+      "Bash(cmd.exe /c start explorer \"D:\\\\Claude\\\\ConversationLogs\")",
+      "Bash(xargs grep:*)",
+      "Bash(grep -r \"AddVertsUVForAABB2D\\\\|BindTexture\" /d/CodeReference/SD/MathVisualTests/Code/Game/*.cpp)",
+      "Bash(grep -r \"CreateOrGetTextureFromFile\" /d/CodeReference/SD/MathVisualTests/Code/Game/*.cpp)",
+      "Bash(\"/c/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/MSBuild.exe\" MathVisualTests.sln -p:Configuration=Debug -p:Platform=x64 -nologo -verbosity:minimal)",
+      "Bash(grep -r \"#include.*queue\\\\|#include.*deque\" /d/CodeReference/SD/Engine/Code/Engine/core/*.cpp)",
+      "Bash(grep:*)"
+    ]
+  }
+}

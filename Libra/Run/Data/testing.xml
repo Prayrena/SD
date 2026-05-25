@@ -1,0 +1,14 @@
+<TileDefinitions>
+	<!-- this is how XML set up start and end-->
+	<FirstLevelElement health ="100" speed ="6.5">	
+		<TileDefinition name ="TILE_TYPE_PALE_RED_BRICK"  isSolid ="false" spritCoords="1, 1"  tintColor ="Rgba8::WHITE"/> 
+	</FirstLevelElement>
+
+	<!-- another way to set up start and end -->
+	<MapDefinition
+	name ="Approach"
+	dimensions="48,24"
+	fillTileType="LongGrass"
+	wormTileTYpe="DarkGrass"	wormCount="15" worm1MaxLength="9"
+		/>
+</TileDefinitions>

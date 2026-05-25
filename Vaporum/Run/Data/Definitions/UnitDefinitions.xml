@@ -1,0 +1,7 @@
+<UnitDefinitions>
+  <UnitDefinition symbol="b" name="Bison" imageFilename="Data/Images/Tanks/Bison.png" modelFilename="Data/Models/Bison/Bison.xml" type="Tank" groundAttackDamage="50" groundAttackRangeMin="1" groundAttackRangeMax="1" movementRange="6" defense="40" health="8"/>
+  <UnitDefinition symbol="g" name="Grizzly" imageFilename="Data/Images/Tanks/Grizzly.png" modelFilename="Data/Models/Grizzly/Grizzly.xml" type="Tank" groundAttackDamage="70" groundAttackRangeMin="1" groundAttackRangeMax="1" movementRange="4" defense="50" health="8"/>
+  <UnitDefinition symbol="h" name="Hadrian" imageFilename="Data/Images/Tanks/Hadrian.png" modelFilename="Data/Models/Hadrian/Hadrian.xml" type="Artillery" groundAttackDamage="45" groundAttackRangeMin="2" groundAttackRangeMax="5" movementRange="4" defense="30" health="8"/>
+  <UnitDefinition symbol="o" name="Octopus" imageFilename="Data/Images/Tanks/Octopus.png" modelFilename="Data/Models/Octopus/Octopus.xml" type="Artillery" groundAttackDamage="60" groundAttackRangeMin="2" groundAttackRangeMax="4" movementRange="4" defense="30" health="8"/>
+  <UnitDefinition symbol="p" name="Polar" imageFilename="Data/Images/Tanks/Polar.png" modelFilename="Data/Models/Polar/Polar.xml" type="Tank" groundAttackDamage="60" groundAttackRangeMin="1" groundAttackRangeMax="1" movementRange="4" defense="60" health="8"/>
+</UnitDefinitions>

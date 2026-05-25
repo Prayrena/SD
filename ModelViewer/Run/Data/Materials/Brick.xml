@@ -1,0 +1,1 @@
+<Material name="Brick" shader="Data/Shaders/Phong" vertexType="Vertex_PCUTBN" diffuseTexture="Data/Images/Brick_Diffuse.png" normalTexture="Data/Images/Brick_Normal.png" specGlossEmitTexture="Data/Images/Brick_SpecGlossEmit.png" color="255,255,255,255"/>

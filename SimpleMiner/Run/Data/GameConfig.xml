@@ -1,0 +1,13 @@
+<GameConfig
+	WorldSeed="1"
+	
+	autoCreateChunks="true"
+	chunkActivationDistance="250"
+	saveModifiedChunks="true"
+	
+	EnableFog = "true"
+	debugBlockMinDist="3"
+	debugBlockMaxDist="6"
+	debugBlockLayersBelow="3"
+	/>
+

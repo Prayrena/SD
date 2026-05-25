@@ -1,0 +1,162 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Framework">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Gameplay">
+      <UniqueIdentifier>{aa303abc-95fe-4902-afd4-3f455e9ef0d2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Gameplay\Objects">
+      <UniqueIdentifier>{88c8c815-dfe1-4718-bce3-5aaebcf54c2f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Gameplay\Objects\VFX">
+      <UniqueIdentifier>{1ea9c5be-1ff9-43ac-83cb-f47799408d56}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Gameplay\UI">
+      <UniqueIdentifier>{e08b0f21-0bc6-4e03-96d6-b71e9f7892dc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Gameplay\GameSettings">
+      <UniqueIdentifier>{e390c131-2948-43a3-9b02-9d1cefa6c400}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Gameplay\Template">
+      <UniqueIdentifier>{9d526d45-907f-45cc-97f5-9cc546a3b7c2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Gameplay\Objects\Player">
+      <UniqueIdentifier>{621c33aa-a766-4928-84cb-69633b6d1562}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Gameplay\Objects\Level">
+      <UniqueIdentifier>{e3f698bf-37c0-4954-aa2f-3375dc267c95}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Gameplay\Objects\Entity">
+      <UniqueIdentifier>{17353367-51e6-42f1-8110-ed82e6025f2d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\XML">
+      <UniqueIdentifier>{725f467a-a211-4449-b310-8e7bd0a1baba}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Main_Windows.cpp">
+      <Filter>Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="App.cpp">
+      <Filter>Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="Game.cpp">
+      <Filter>Gameplay</Filter>
+    </ClCompile>
+    <ClCompile Include="GameCommon.cpp">
+      <Filter>Gameplay\GameSettings</Filter>
+    </ClCompile>
+    <ClCompile Include="UI.cpp">
+      <Filter>Gameplay\Template</Filter>
+    </ClCompile>
+    <ClCompile Include="StarField.cpp">
+      <Filter>Gameplay\Objects\VFX</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayerTank.cpp">
+      <Filter>Gameplay\Objects\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="ShiningTriangle.cpp">
+      <Filter>Gameplay\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Map.cpp">
+      <Filter>Gameplay\Objects\Level</Filter>
+    </ClCompile>
+    <ClCompile Include="Tile.cpp">
+      <Filter>Gameplay\Objects\Level</Filter>
+    </ClCompile>
+    <ClCompile Include="World.cpp">
+      <Filter>Gameplay\Objects\Level</Filter>
+    </ClCompile>
+    <ClCompile Include="Scorpio.cpp">
+      <Filter>Gameplay\Objects\Entity</Filter>
+    </ClCompile>
+    <ClCompile Include="Leo.cpp">
+      <Filter>Gameplay\Objects\Entity</Filter>
+    </ClCompile>
+    <ClCompile Include="Aries.cpp">
+      <Filter>Gameplay\Objects\Entity</Filter>
+    </ClCompile>
+    <ClCompile Include="Entity.cpp">
+      <Filter>Gameplay\Objects\Entity</Filter>
+    </ClCompile>
+    <ClCompile Include="Bullet.cpp">
+      <Filter>Gameplay\Objects\Entity</Filter>
+    </ClCompile>
+    <ClCompile Include="Capricorn.cpp">
+      <Filter>Gameplay\Objects\Entity</Filter>
+    </ClCompile>
+    <ClCompile Include="Explosion.cpp">
+      <Filter>Gameplay\Objects\Entity</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="App.hpp">
+      <Filter>Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="Game.hpp">
+      <Filter>Gameplay</Filter>
+    </ClInclude>
+    <ClInclude Include="EngineBuildPreferences.hpp">
+      <Filter>Gameplay\GameSettings</Filter>
+    </ClInclude>
+    <ClInclude Include="GameCommon.hpp">
+      <Filter>Gameplay\GameSettings</Filter>
+    </ClInclude>
+    <ClInclude Include="UI.hpp">
+      <Filter>Gameplay\Template</Filter>
+    </ClInclude>
+    <ClInclude Include="StarField.hpp">
+      <Filter>Gameplay\Objects\VFX</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayerTank.hpp">
+      <Filter>Gameplay\Objects\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="ShiningTriangle.hpp">
+      <Filter>Gameplay\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="World.hpp">
+      <Filter>Gameplay\Objects\Level</Filter>
+    </ClInclude>
+    <ClInclude Include="Map.hpp">
+      <Filter>Gameplay\Objects\Level</Filter>
+    </ClInclude>
+    <ClInclude Include="Tile.hpp">
+      <Filter>Gameplay\Objects\Level</Filter>
+    </ClInclude>
+    <ClInclude Include="Scorpio.hpp">
+      <Filter>Gameplay\Objects\Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="Leo.hpp">
+      <Filter>Gameplay\Objects\Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="Aries.hpp">
+      <Filter>Gameplay\Objects\Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="Entity.hpp">
+      <Filter>Gameplay\Objects\Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="Bullet.hpp">
+      <Filter>Gameplay\Objects\Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="Capricorn.hpp">
+      <Filter>Gameplay\Objects\Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="Explosion.hpp">
+      <Filter>Gameplay\Objects\Entity</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="..\..\Run\Data\Definitions\LibraTileDefinitions.xml">
+      <Filter>Framework\XML</Filter>
+    </Xml>
+    <Xml Include="..\..\Run\Data\Definitions\LibraMapDefinitions.xml">
+      <Filter>Framework\XML</Filter>
+    </Xml>
+    <Xml Include="..\..\Run\Data\LibraGameConfig.xml">
+      <Filter>Framework\XML</Filter>
+    </Xml>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,9 @@
+<Material
+  name="M_Crawler"
+  shader="Phong"
+  vertexType="Vertex_PCUTBN"
+  diffuseTexture="Data/Textures/Crawler_Base_Color.png"
+  normalTexture="Data/Textures/Crawler_Normal.png"
+  specGlossEmitTexture="Data/Textures/Crawler_SpecGlossEmiss.png"
+  color="255,255,255,255"
+/>

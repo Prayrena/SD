@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(explorer:*)",
+      "Bash(start explorer:*)",
+      "Bash(start notepad:*)",
+      "Bash(powershell -Command \"\n$path = 'D:\\\\CodeReference\\\\Assignments\\\\SD_Summer\\\\A5_Jobs, Threads, and Caves\\\\C33 SDST-A05 - Jobs, Threads, and Caves.docx'\n$zip = [System.IO.Compression.ZipFile]::OpenRead\\($path\\)\n$entry = $zip.Entries | Where-Object { $_.FullName -eq 'word/document.xml' }\n$stream = $entry.Open\\(\\)\n$reader = New-Object System.IO.StreamReader\\($stream\\)\n$xml = $reader.ReadToEnd\\(\\)\n$reader.Close\\(\\); $zip.Dispose\\(\\)\n$clean = $xml -replace '<[^>]+>', ' '\n$clean = $clean -replace '\\\\s+', ' '\n$clean.Trim\\(\\)\n\" 2>&1)",
+      "Bash(powershell -Command \"Add-Type -Assembly System.IO.Compression.FileSystem; $zip = [System.IO.Compression.ZipFile]::OpenRead\\('D:\\\\CodeReference\\\\Assignments\\\\SD_Summer\\\\A5_Jobs, Threads, and Caves\\\\C33 SDST-A05 - Jobs, Threads, and Caves.docx'\\); $entry = $zip.Entries | Where-Object { $_.FullName -eq 'word/document.xml' }; $stream = $entry.Open\\(\\); $reader = New-Object System.IO.StreamReader\\($stream\\); $xml = $reader.ReadToEnd\\(\\); $reader.Close\\(\\); $zip.Dispose\\(\\); $clean = $xml -replace '<[^>]+>', ' '; $clean = $clean -replace '\\\\s+', ' '; Write-Output $clean.Trim\\(\\)\")",
+      "Bash(winget install:*)",
+      "Bash(py:*)",
+      "Bash(/c/Users/Cheng/AppData/Local/Programs/Python/Python312/python.exe -c \"\nimport zipfile, re\npath = r'D:\\\\CodeReference\\\\Assignments\\\\SD_Summer\\\\A5_Jobs, Threads, and Caves\\\\C33 SDST-A05 - Jobs, Threads, and Caves.docx'\nwith zipfile.ZipFile\\(path\\) as z:\n    with z.open\\('word/document.xml'\\) as f:\n        content = f.read\\(\\).decode\\('utf-8'\\)\ntext = re.sub\\(r'<[^>]+>', ' ', content\\)\ntext = re.sub\\(r'\\\\s+', ' ', text\\).strip\\(\\)\nprint\\(text\\)\n\")"
+    ]
+  }
+}

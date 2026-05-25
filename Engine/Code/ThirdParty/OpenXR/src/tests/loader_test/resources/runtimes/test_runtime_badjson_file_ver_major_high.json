@@ -1,0 +1,6 @@
+{
+    "file_format_version": "15.0.0",
+    "runtime": {
+        "library_path": "D:/HelloWorldTest/src/tests/loader_test/test_runtimes/test_runtime.dll",
+    }
+}

@@ -1,0 +1,9 @@
+<Material
+  name="M_Controller_r"
+  shader="Phong"
+  vertexType="Vertex_PCUTBN"
+  diffuseTexture="Data/Textures/Controller_r_Diffuse.png"
+  normalTexture="Data/Textures/Controller_r_normal.png"
+  specGlossEmitTexture=""
+  color="255,255,255,255"
+/>

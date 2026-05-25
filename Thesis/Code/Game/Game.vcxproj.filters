@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Framework">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="GamePlay">
+      <UniqueIdentifier>{0d9f5746-0648-4dea-b0ae-fc53414a0eb8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PlayerAndEnemies">
+      <UniqueIdentifier>{a171b567-6dbd-4519-b8d7-f589986f8f91}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="GameCommon.hpp">
+      <Filter>Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="EngineBuildPreferences.hpp">
+      <Filter>Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="check.h">
+      <Filter>Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="geometry.h">
+      <Filter>Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="graphicsapi.h">
+      <Filter>Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="graphicsplugin.h">
+      <Filter>Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="logger.h">
+      <Filter>Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="openxr_program.h">
+      <Filter>Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="platformdata.h">
+      <Filter>Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="platformplugin.h">
+      <Filter>Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="Game.hpp">
+      <Filter>GamePlay</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayerHand.hpp">
+      <Filter>GamePlay</Filter>
+    </ClInclude>
+    <ClInclude Include="HUD.hpp">
+      <Filter>GamePlay</Filter>
+    </ClInclude>
+    <ClInclude Include="VRPlayer.hpp">
+      <Filter>PlayerAndEnemies</Filter>
+    </ClInclude>
+    <ClInclude Include="WinPlayer.hpp">
+      <Filter>PlayerAndEnemies</Filter>
+    </ClInclude>
+    <ClInclude Include="Crawler.hpp">
+      <Filter>GamePlay</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Main.cpp">
+      <Filter>Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="logger.cpp">
+      <Filter>Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="openxr_program.cpp">
+      <Filter>Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="platformplugin_android.cpp">
+      <Filter>Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="platformplugin_factory.cpp">
+      <Filter>Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="platformplugin_posix.cpp">
+      <Filter>Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="platformplugin_win32.cpp">
+      <Filter>Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="Game.cpp">
+      <Filter>GamePlay</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayerHand.cpp">
+      <Filter>GamePlay</Filter>
+    </ClCompile>
+    <ClCompile Include="HUD.cpp">
+      <Filter>GamePlay</Filter>
+    </ClCompile>
+    <ClCompile Include="VRPlayer.cpp">
+      <Filter>PlayerAndEnemies</Filter>
+    </ClCompile>
+    <ClCompile Include="WinPlayer.cpp">
+      <Filter>PlayerAndEnemies</Filter>
+    </ClCompile>
+    <ClCompile Include="Crawler.cpp">
+      <Filter>GamePlay</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

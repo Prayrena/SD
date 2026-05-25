@@ -1,0 +1,3 @@
+<Model name="Controller_r" path="Data/Models/controller_r.obj" material="Data/Materials/M_Controller_r.xml">
+  <Transform x="1,0,0" y="0,1,0" z="0,0,1" t="0,0,0" scale="0.015"/>
+</Model>

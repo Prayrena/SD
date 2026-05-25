@@ -1,0 +1,9 @@
+<Material
+  name="M_Player_Cockpit"
+  shader="Phong"
+  vertexType="Vertex_PCUTBN"
+  diffuseTexture="Data/Textures/Player_Cockpit_Diffuse.png"
+  normalTexture="Data/Textures/Player_Cockpit_Normal.png"
+  specGlossEmitTexture="Data/Textures/Player_Cockpit_SpecGlossEmiss.png"
+  color="255,255,255,255"
+/>

@@ -1,0 +1,3 @@
+<Model name="Cube_Textured" path="Data/Models/Cube_Textured.obj" material="Data/Materials/Cube_Textured.xml">
+  <Transform x="1,0,0" y="0,1,0" z="0,0,1" t="0,0,0" scale="1.0"/>
+</Model>

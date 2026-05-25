@@ -1,0 +1,1 @@
+<Material name="Grass" shader="Data/Shaders/Phong" vertexType="Vertex_PCUTBN" diffuseTexture="Data/Images/Grass_Diffuse.png" normalTexture="Data/Images/Grass_Normal.png" specGlossEmitTexture="Data/Images/Grass_SpecGlossEmit.png" color="255,255,255,255"/>
