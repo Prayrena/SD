@@ -363,7 +363,7 @@ void WinPlayer::ControlActorByInput()
 	}
 
 	// turn the movement in local space and transform into the world space 
-	// Holding WASD (or, if you are cool, ESDF) “drives” (or “strafes”) forward, left, backward, or right, respectively, 
+	// Holding WASD (or, if you are cool, ESDF) "drives" (or "strafes") forward, left, backward, or right, respectively,
 	// but only in XY (never changing altitude along +/- Z).  
 	m_position += (GetMovementTransformMatrix().TransformVectorQuantity3D(deltaVelocity));
 

@@ -32,6 +32,8 @@ public:
 	Vec2 GetRandomPointInsideAABB2(AABB2 box);
 
 	// 3D
+	// Randomized spatial helpers live on the RNG so MathUtils can stay deterministic and app-global free.
+	Vec3 GetRandomDirectionInCone(Vec3 direction, float maxDeflectionDegrees);
 	Vec3 GetRandomDirectionInCone(Vec3 direction, FloatRange range);
 
 	unsigned int m_seed = 0;

@@ -267,7 +267,7 @@ void TwoJointsIKSolver::SolveIK()
 		else
 		{
 		
-			// Apply rotation to A’s local rotation
+			// Apply rotation to A's local rotation
 			A->m_localRotation = A_newLocalRotation;
 		}
 	}

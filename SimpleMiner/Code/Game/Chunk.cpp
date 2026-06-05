@@ -159,7 +159,7 @@ void Chunk::GenerateBiomeFactors()
 
 			// ocean
 			// Map Oceanness into [0,1] and run a SmoothStep3() easing function on it (perhaps even twice!) 
-			// to get more distinctively “ocean” and “non-ocean (land)” biome areas
+			// to get more distinctively "ocean" and "non-ocean (land)" biome areas
 			Oceanness = SmoothStep3(SmoothStep3(Oceanness));
 			// Oceanness < 0.50 = normal terrain
 			if (Oceanness >= 0.5f && Oceanness <= 0.75f)
@@ -377,9 +377,9 @@ void Chunk::CreateInitialBlocks()
 	{
 		for (int localY = 0; localY < CHUNK_SIZE_Y; ++localY)
 		{
-			// The block at terrainHeightZ in each column is “grass”
-			// All blocks above this in any column are set to “air”
-			// random(3~4) blocks below this are set to “dirt”
+			// The block at terrainHeightZ in each column is "grass"
+			// All blocks above this in any column are set to "air"
+			// random(3~4) blocks below this are set to "dirt"
 			// we first get the dirt number for each column
 			int numDirt = g_rng->RollRandomIntInRange(3, 4);
 			IntVec2 treeCoords = GetBiomeCoordsByLocalCoords(IntVec2(localX, localY));
@@ -388,11 +388,11 @@ void Chunk::CreateInitialBlocks()
 
 			for (int localZ = 0; localZ < CHUNK_SIZE_Z; ++localZ)
 			{
-				// And all blocks below dirt (down to the bottom of the world) are set to “stone”
-				// For any “stone” block to be replaced by a rare ore block type: 5% chance to become “coal”; 
-				// if not, 2% chance to become “iron”; 
-				// if not, 0.5% chance to become “gold”; 
-				// if not, 0.1% chance to become “diamond”.
+				// And all blocks below dirt (down to the bottom of the world) are set to "stone"
+				// For any "stone" block to be replaced by a rare ore block type: 5% chance to become "coal";
+				// if not, 2% chance to become "iron";
+				// if not, 0.5% chance to become "gold";
+				// if not, 0.1% chance to become "diamond".
 				if (localZ < (terrainHeight - numDirt))
 				{
 					if (g_rng->RollRandomFloatZeroToOne() < 0.05f)
@@ -452,7 +452,7 @@ void Chunk::CreateInitialBlocks()
 				}
 				else if (localZ > terrainHeight)
 				{
-					// Any blocks that would otherwise be “air” but whose z block coordinate is <= CHUNK_HEIGHT/2 is “water” instead
+					// Any blocks that would otherwise be "air" but whose z block coordinate is <= CHUNK_HEIGHT/2 is "water" instead
 					if (localZ <= WATER_LEVEL)
 					{
 						if (m_temperature[biomeIndex] < 0.4f)
@@ -970,7 +970,7 @@ void Chunk::CopyVertexBufferFromCPUtoGPU()
 void Chunk::SaveBlocksDataToFile()
 {
 	std::vector<uint8_t> inBuffer;
-	// Chunk files always start with the four character code (4CC) “GCHK” – for Guildhall Chunk
+	// Chunk files always start with the four character code (4CC) "GCHK" - for Guildhall Chunk
 	inBuffer.push_back('G');
 	inBuffer.push_back('C');
 	inBuffer.push_back('H');

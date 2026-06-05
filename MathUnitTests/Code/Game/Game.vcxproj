@@ -123,6 +123,12 @@
     <IntDir>$(SolutionDir)Temporary\$(ProjectName)_$(PlatformShortName)_$(Configuration)\</IntDir>
     <TargetName>$(ProjectName)_$(Configuration)_$(PlatformShortName)</TargetName>
   </PropertyGroup>
+  <!-- The provided MP1A2 harness intentionally retains deviation constants that are not consumed. -->
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <DisableSpecificWarnings>4189;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+  </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <WarningLevel>Level4</WarningLevel>

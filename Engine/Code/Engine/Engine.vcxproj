@@ -681,6 +681,7 @@
       <LanguageStandard>stdcpp17</LanguageStandard>
       <AdditionalIncludeDirectories>$(SolutionDir)Code/;$(SolutionDir)../Engine/Code/;;$(SolutionDir)../Engine/Code/ThirdParty/Physx/include</AdditionalIncludeDirectories>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <Link>
       <SubSystem>
@@ -784,6 +785,7 @@
       <LanguageStandard>stdcpp17</LanguageStandard>
       <AdditionalIncludeDirectories>$(SolutionDir)Code/;$(SolutionDir)../Engine/Code/;$(SolutionDir)../Engine/Code/ThirdParty/Physx/include;$(SolutionDir)../Engine/Code/ThirdParty/Physx/include;$(SolutionDir)../Engine/Code/ThirdParty/Physx/include;$(SolutionDir)../Engine/Code/ThirdParty/Physx/include/foundation;$(SolutionDir)../Engine/Code/ThirdParty/Physx/include</AdditionalIncludeDirectories>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <Link>
       <SubSystem>

@@ -1073,6 +1073,8 @@ void RaycastVSConvex2Mode::TestLoadingExampleGHCSSaveFile()
 	{
 		int majorFileVersion = parser->ParseByte();
 		int minorFileVersion = parser->ParseByte();
+		UNUSED(majorFileVersion);
+		UNUSED(minorFileVersion);
 
 		eBufferEndian endianMode = (eBufferEndian)parser->ParseByte();
 		parser->SetEndianMode((eBufferEndian)endianMode);
@@ -1268,6 +1270,7 @@ void RaycastVSConvex2Mode::TestLoadingExampleGHCSSaveFile()
 				}
 
 				unsigned char chunkType = parser->ParseByte();
+				UNUSED(chunkType);
 
 				endianMode = (eBufferEndian)parser->ParseByte();
 				parser->SetEndianMode((eBufferEndian)endianMode);
@@ -1400,6 +1403,8 @@ void RaycastVSConvex2Mode::TestSavingExampleGHCSSaveFile()
 	{
 		int majorFileVersion = parser->ParseByte();
 		int minorFileVersion = parser->ParseByte();
+		UNUSED(majorFileVersion);
+		UNUSED(minorFileVersion);
 
 		eBufferEndian endianMode = (eBufferEndian)parser->ParseByte();
 		parser->SetEndianMode((eBufferEndian)endianMode);

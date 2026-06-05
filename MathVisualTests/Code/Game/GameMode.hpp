@@ -7,6 +7,8 @@ class Renderer;
 
 enum TestingScene
 {
+	// App starts static_cast<TestingScene>(0), so keep the default startup mode first.
+	JOB_SYSTEM_AND_THREADS,
 	HEATMAP_ASSESSMENT,
 	RAYCAST2D_VS_CONVEX2S,
 	SECOND_ORDER_DYNAMICS,

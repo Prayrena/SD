@@ -581,7 +581,6 @@ void TestJob::Execute()
 void App::GenerateAndQueueOneJobForJobSystem()
 { 
 	TestJob* job = new TestJob();
-	job->m_jobStatus = JobStatus::CREATED;
 	m_jobs.push_back(job);
 	g_theJobSystem->QueueJobs(job);
 }
@@ -591,7 +590,6 @@ void App::GenerateAndQueueNumJobsForJobSystem(int numJobs)
 	for (int i = 0; i < numJobs; ++i)
 	{
 		TestJob* job = new TestJob();
-		job->m_jobStatus = JobStatus::CREATED;
 		m_jobs.push_back(job);
 		g_theJobSystem->QueueJobs(job);
 	}
@@ -604,9 +602,8 @@ void App::RetrieveOneCompletedJob()
 
 void App::RetrieveAllCompletedJobs()
 {
-	while (g_theJobSystem->m_completedJobs.size() != 0)
+	while (g_theJobSystem->RetrieveCompletedJobs(nullptr) != nullptr)
 	{
-		g_theJobSystem->RetrieveCompletedJobs(nullptr);
 	}
 }
 

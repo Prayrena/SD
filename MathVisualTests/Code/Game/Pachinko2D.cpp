@@ -634,7 +634,7 @@ void Pachinko2D::CheckBallVsWalls(PachinkoBall& ball)
 	else 
 	{
 		// teleport 10% of total screen-height higher than the top of the screen 
-		// plus the ball’ s radius 
+		// plus the ball's radius
 		if (ball.m_discCenter.y < (ball.m_discRadius * (-1.05f)))
 		{
 			ball.m_discCenter.y = WORLD_SIZE_Y * 1.1f + ball.m_discRadius;

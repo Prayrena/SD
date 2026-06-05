@@ -3,11 +3,8 @@
 #include "Engine/Math/Vec3.hpp"
 #include "Engine/Math/AABB2.hpp"
 #include "Engine/Math/FloatRange.hpp"
-#include "Engine/Math/RandomNumberGenerator.hpp"
 #include "Engine/Renderer/DebugRender.hpp"
 #include <math.h>
-
-extern RandomNumberGenerator* g_rng;
 
 int GetMax(int a, int b)
 {
@@ -400,21 +397,6 @@ float GetAngleDegreesBetweenVectors2D(Vec2 const& a, Vec2 const& b)
 	{
 		return 0.f;
 	}
-}
-
-Vec3 GetRandomDirectionInCone(Vec3 direction, float range)
-{
-	FloatRange yawRange(-range, range);
-	FloatRange pitchRange(-range, range);
-
-	float yawDeflection = g_rng->RollRandomFloatInFloatRange(yawRange);
-	float pitchDeflection = g_rng->RollRandomFloatInFloatRange(pitchRange);
-
-	EulerAngles orientation = direction.GetOrientation();
-	orientation.m_yawDegrees += yawDeflection;
-	orientation.m_pitchDegrees += pitchDeflection;
-
-	return Vec3::GetDirectionForYawPitch(orientation.m_yawDegrees, orientation.m_pitchDegrees);
 }
 
 float GetDistance2D(Vec2 const& posA, Vec2 const& posB)

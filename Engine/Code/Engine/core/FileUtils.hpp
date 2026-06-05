@@ -9,7 +9,10 @@ bool IfThisFileCouldBeRead(std::string const& filePath);
 int FileReadToBuffer(std::vector<uint8_t>& outBuffer, std::string const& filePath);
 int FileReadToString(std::string& outString, std::string const& filePath);
 bool FileWriteFromBuffer(std::vector<uint8_t> inBuffer, std::string const& filePathName);
+bool FileWriteFromString(std::string const& text, std::string const& filePathName);
 bool CreateFolder(std::string filePathName);
+bool CreateFolderPath(std::string const& folderPathName);
+bool CreateFolderForFilePath(std::string const& filePathName);
 
 enum class eBufferEndian : unsigned char	// default is int, saving memories?
 {

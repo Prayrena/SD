@@ -617,7 +617,7 @@ void NetSystem::PrepareSendBuffer()
 //		// Handle the case where some or all of the buffer was sent
 //		OnDataSent(bytesSent);
 //
-//		// Continue to check if there’s more data to send
+//		// Continue to check if there's more data to send
 //	}
 //}
 

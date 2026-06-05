@@ -89,8 +89,6 @@ float GetShortestAngularDispDegrees(float startDegrees, float endDegrees);
 float GetTurnedTowardDegrees(float currentDegrees, float goalDegrees, float maxDeltaDegrees);
 float GetAngleDegreesBetweenVectors2D(Vec2 const& a, Vec2 const& b);
 
-Vec3 GetRandomDirectionInCone(Vec3 direction, float range); // Calculate Shooting Deflection
-
 //-----------------------------------------------------------------------------------------------------------------------------
 // Basic 2D & 3D utilities
 float GetDistance2D(Vec2 const& posA, Vec2 const& posB);

@@ -4,6 +4,7 @@
 #include <stdio.h>
 #include <Windows.h>
 #include <fstream>
+#include <vector>
 
 using namespace std;
 
@@ -110,6 +111,70 @@ bool CreateFolder(std::string filePathName)
 	}
 }
 
+bool CreateFolderPath(std::string const& folderPathName)
+{
+	if (folderPathName.empty())
+	{
+		return true;
+	}
+
+	std::string normalizedPath = folderPathName;
+	for (char& c : normalizedPath)
+	{
+		if (c == '\\') c = '/';
+	}
+
+	std::string currentPath;
+	size_t scanStart = 0;
+	if (normalizedPath.size() >= 2 && normalizedPath[1] == ':')
+	{
+		currentPath = normalizedPath.substr(0, 2);
+		scanStart = 2;
+	}
+
+	for (size_t charIndex = scanStart; charIndex <= normalizedPath.size(); ++charIndex)
+	{
+		if (charIndex != normalizedPath.size() && normalizedPath[charIndex] != '/')
+		{
+			continue;
+		}
+
+		std::string pathPart = normalizedPath.substr(scanStart, charIndex - scanStart);
+		if (!pathPart.empty())
+		{
+			if (!currentPath.empty() && currentPath.back() != '/')
+			{
+				currentPath += "/";
+			}
+			currentPath += pathPart;
+
+			if (!CreateDirectoryA(currentPath.c_str(), NULL))
+			{
+				DWORD errorCode = GetLastError();
+				if (errorCode != ERROR_ALREADY_EXISTS)
+				{
+					return false;
+				}
+			}
+		}
+
+		scanStart = charIndex + 1;
+	}
+
+	return true;
+}
+
+bool CreateFolderForFilePath(std::string const& filePathName)
+{
+	size_t lastSlash = filePathName.find_last_of("/\\");
+	if (lastSlash == std::string::npos)
+	{
+		return true;
+	}
+
+	return CreateFolderPath(filePathName.substr(0, lastSlash));
+}
+
 eBufferEndian GetPlatformNativeEndian()
 {
 	unsigned int endianTest = 0x12345678;
@@ -130,6 +195,8 @@ eBufferEndian GetPlatformNativeEndian()
 
 bool FileWriteFromBuffer(std::vector<uint8_t> inBuffer, std::string const& filePathName)
 {
+	CreateFolderForFilePath(filePathName);
+
 	// Open for read
 	errno_t err;
 	FILE* pFile; // like a cursor in the word document
@@ -156,6 +223,14 @@ bool FileWriteFromBuffer(std::vector<uint8_t> inBuffer, std::string const& fileP
 		err = fclose(pFile);
 		return true;
 	}
+}
+
+bool FileWriteFromString(std::string const& text, std::string const& filePathName)
+{
+	std::vector<uint8_t> buffer;
+	buffer.reserve(text.size());
+	buffer.insert(buffer.end(), text.begin(), text.end());
+	return FileWriteFromBuffer(buffer, filePathName);
 }
 
 //----------------------------------------------------------------------------------------------------------------------------------------------------

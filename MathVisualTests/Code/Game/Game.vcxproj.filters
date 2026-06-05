@@ -94,6 +94,9 @@
     <ClCompile Include="SecondOrderDynamicsMode.cpp">
       <Filter>Gameplay\TestingModes</Filter>
     </ClCompile>
+    <ClCompile Include="JobSystemAndThreadsMode.cpp">
+      <Filter>Gameplay\TestingModes</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="App.hpp">
@@ -154,6 +157,9 @@
       <Filter>Gameplay\TestingModes</Filter>
     </ClInclude>
     <ClInclude Include="SecondOrderDynamicsMode.hpp">
+      <Filter>Gameplay\TestingModes</Filter>
+    </ClInclude>
+    <ClInclude Include="JobSystemAndThreadsMode.hpp">
       <Filter>Gameplay\TestingModes</Filter>
     </ClInclude>
   </ItemGroup>

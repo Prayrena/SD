@@ -12,6 +12,7 @@
 #include "Game/Curves2DMode.hpp"
 #include "Game/Pachinko2D.hpp"
 #include "Game/SecondOrderDynamicsMode.hpp"
+#include "Game/JobSystemAndThreadsMode.hpp"
 
 extern InputSystem* g_theInput;
 
@@ -74,6 +75,7 @@ GameMode* GameMode::CreateNewGame(TestingScene type)
 	{
 	case HEATMAP_ASSESSMENT: return new HeatmapAssessmentMode();
 	case PACHINKO: return new Pachinko2D();
+	case JOB_SYSTEM_AND_THREADS: return new JobSystemAndThreadsMode();
 	case CURVES2D: return new Curves2DMode();
 	case QUATERNION: return new QuaternionMode();
 	case SECOND_ORDER_DYNAMICS: return new SecondOrderDynamicsMode();

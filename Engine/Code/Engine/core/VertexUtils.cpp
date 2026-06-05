@@ -1825,7 +1825,7 @@ void CalculateTangentSpaceBasisVectors(std::vector<Vertex_PCUTBN>& vertexes, std
 			tangent = tangent.GetNormalized();
 			biTangent = biTangent.GetNormalized();
 
-			// Apply Gram–Schmidt ortho-normalization keeping N unchanged
+			// Apply Gram-Schmidt ortho-normalization keeping N unchanged
 			// Subtracting this projection removes any component of the tangent that is parallel to the normal, leaving the tangent orthogonal to the normal
 			tangent = (tangent - triNormal * DotProduct3D(triNormal, tangent)).GetNormalized();
 

@@ -70,7 +70,7 @@ Vec3 RandomNumberGenerator::GetRandomDirectionInCone(Vec3 direction, FloatRange 
 	float r2 = RollRandomFloatInRange(0.f, 1.f);
 	if (r2 >= 0.5f)
 	{
-		yawDeflection *= -1.f;
+		pitchDeflection *= -1.f;
 	}
 
 	EulerAngles orientation = direction.GetOrientation();
@@ -78,4 +78,10 @@ Vec3 RandomNumberGenerator::GetRandomDirectionInCone(Vec3 direction, FloatRange 
 	orientation.m_pitchDegrees += pitchDeflection;
 
 	return Vec3::GetDirectionForYawPitch(orientation.m_yawDegrees, orientation.m_pitchDegrees);
+}
+
+Vec3 RandomNumberGenerator::GetRandomDirectionInCone(Vec3 direction, float maxDeflectionDegrees)
+{
+	// Convenience overload for common symmetric cones around the input direction.
+	return GetRandomDirectionInCone(direction, FloatRange(0.f, maxDeflectionDegrees));
 }

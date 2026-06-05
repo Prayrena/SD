@@ -476,7 +476,7 @@ void VRPlayer::CreateJointToConstrainMechBodyMovement()
 		joint->setMotion(PxD6Axis::eSWING1, PxD6Motion::eFREE); // Allow spinning
 		joint->setMotion(PxD6Axis::eSWING2, PxD6Motion::eLOCKED); // Allow spinning
 		// have a swing limit will cause fall over while moving and rotating
-		// Set swing limits (±15 degrees)
+		// Set swing limits (+/-15 degrees)
 		// PxJointLimitCone swingLimit(PxPi / 180.f, PxPi / 180.f);
 		// joint->setSwingLimit(swingLimit);
 	
@@ -568,7 +568,7 @@ void VRPlayer::UpdateHands()
 	// 		// Apply force only if it's a dynamic actor
 	// 		// dynamicActor->setAngularVelocity(PxVec3(0.f, 5.f, 0.f)); // Give it a spin
 	// 		// dynamicActor->addForce(PxVec3(0, 0, 100), PxForceMode::eFORCE, true);			// eForce is adding force of n Newtons in the direction
-	// 		// dynamicActor->addForce(PxVec3(0, 0, 10), PxForceMode::eIMPULSE, true);		// an instantaneous momentum of n kg·m/s in the +X direction
+	// 		// dynamicActor->addForce(PxVec3(0, 0, 10), PxForceMode::eIMPULSE, true);		// an instantaneous momentum of n kg*m/s in the +X direction
 	// 
 	// 		// dynamicActor->setAngularDamping(1.0);	// larger the value is, the quick the angular velocity is going to decease
 	// 

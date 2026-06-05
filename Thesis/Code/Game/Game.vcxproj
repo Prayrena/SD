@@ -407,7 +407,8 @@
       <AdditionalLibraryDirectories>$(SolutionDir)Code/;$(SolutionDir)../Engine/Code/</AdditionalLibraryDirectories>
       <AdditionalDependencies>ThirdParty\OpenXR\src\loader\Debug\openxr_loaderd.lib;ThirdParty\OpenXR\src\Debug\openxr-gfxwrapper.lib;ole32.lib;d3d11.lib;d3d12.lib;d3dcompiler.lib;dxgi.lib;opengl32.lib;glu32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;$(SolutionDir)../Engine/Code/ThirdParty/Physx/bin/win.x86_64.vc143.mt/debug/PhysXExtensions_static_64.lib;$(SolutionDir)../Engine/Code/ThirdParty/Physx/bin/win.x86_64.vc143.mt/debug/PhysXPvdSDK_static_64.lib;$(SolutionDir)../Engine/Code/ThirdParty/Physx/bin/win.x86_64.vc143.mt/debug/PhysXCharacterKinematic_static_64.lib;$(SolutionDir)../Engine/Code/ThirdParty/Physx/bin/win.x86_64.vc143.mt/debug/SceneQuery_static_64.lib;$(SolutionDir)../Engine/Code/ThirdParty/Physx/bin/win.x86_64.vc143.mt/debug/PhysXCommon_64.lib;$(SolutionDir)../Engine/Code/ThirdParty/Physx/bin/win.x86_64.vc143.mt/debug/PhysXFoundation_64.lib;$(SolutionDir)../Engine/Code/ThirdParty/Physx/bin/win.x86_64.vc143.mt/debug/PhysXCooking_64.lib;$(SolutionDir)../Engine/Code/ThirdParty/Physx/bin/win.x86_64.vc143.mt/debug/PVDRuntime_64.lib;$(SolutionDir)../Engine/Code/ThirdParty/Physx/bin/win.x86_64.vc143.mt/debug/PhysX_64.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <Profile>true</Profile>
+      <!-- PhysX vendor libraries are shipped without PDB files; runtime linking is still complete. -->
+      <AdditionalOptions>/ignore:4099 %(AdditionalOptions)</AdditionalOptions>
     </Link>
     <PostBuildEvent>
       <Command>xcopy /Y /F /I "$(TargetPath)" "$(SolutionDir)Run"</Command>

@@ -47,6 +47,7 @@
     <ClCompile Include="GetNearestPointsMode.cpp" />
     <ClCompile Include="GameCommon.cpp" />
     <ClCompile Include="GameMode.cpp" />
+    <ClCompile Include="JobSystemAndThreadsMode.cpp" />
     <ClCompile Include="Main_Windows.cpp" />
     <ClCompile Include="Pachinko2D.cpp" />
     <ClCompile Include="Player.cpp" />
@@ -71,6 +72,7 @@
     <ClInclude Include="GetNearestPointsMode.hpp" />
     <ClInclude Include="GameCommon.hpp" />
     <ClInclude Include="GameMode.hpp" />
+    <ClInclude Include="JobSystemAndThreadsMode.hpp" />
     <ClInclude Include="Pachinko2D.hpp" />
     <ClInclude Include="Player.hpp" />
     <ClInclude Include="Prop.hpp" />
@@ -233,6 +235,7 @@
       <AdditionalIncludeDirectories>$(SolutionDir)Code/;$(SolutionDir)../Engine/Code/</AdditionalIncludeDirectories>
       <LanguageStandard>stdcpp17</LanguageStandard>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -281,6 +284,7 @@
       <AdditionalIncludeDirectories>$(SolutionDir)Code/;$(SolutionDir)../Engine/Code/</AdditionalIncludeDirectories>
       <LanguageStandard>stdcpp17</LanguageStandard>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -333,6 +337,7 @@
       <AdditionalIncludeDirectories>$(SolutionDir)Code/;$(SolutionDir)../Engine/Code/</AdditionalIncludeDirectories>
       <LanguageStandard>stdcpp17</LanguageStandard>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -381,6 +386,7 @@
       <AdditionalIncludeDirectories>$(SolutionDir)Code/;$(SolutionDir)../Engine/Code/</AdditionalIncludeDirectories>
       <LanguageStandard>stdcpp17</LanguageStandard>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>

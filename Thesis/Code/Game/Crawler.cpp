@@ -271,7 +271,7 @@ void Crawler::CreateLegDynamicActors(CrawlerLeg* leg)
 	PxQuat rotationMainBody = PxShortestRotation(dir_mainBody, dir_mainBody);
 	PxQuat rotationUpperLeg = PxShortestRotation(dir_upperLeg, dir_upperLeg);
 	  
-	// // // Compute rotation to align each actor’s local "up" with the joint direction
+	// // // Compute rotation to align each actor's local "up" with the joint direction
 	// PxQuat rotationMainBody = GetPxQuat(TransformQuatFromGameToPhysX(
 	// 	Quat::GetQuatFromTwoVectors(mainBodyLocalUp, dir_mainBody)
 	// ));
@@ -311,7 +311,7 @@ void Crawler::CreateLegDynamicActors(CrawlerLeg* leg)
 	// Define the actor's "up" vector in local space (this depends on your model!)
 	Vec3 lowerLegLocalUp = GetPhysXToGameSpaceMat().TransformVectorQuantity3D(Vec3(leg->m_lowerLegActor->getGlobalPose().q.rotate(PxVec3(0.f, 1.f, 0.f))));
 
-	// Compute rotation to align each actor’s local "up" with the joint direction
+	// Compute rotation to align each actor's local "up" with the joint direction
 	// rotationUpperLeg = GetPxQuat(TransformQuatFromGameToPhysX(
 	// 	Quat::GetQuatFromTwoVectors(upperLegLocalUp, dir_upperLeg)
 	// ));	
@@ -1680,7 +1680,7 @@ void Crawler::CreateDynamicRigidBodyForCrawler()
 	// joint->setMotion(PxD6Axis::eTWIST, PxD6Motion::eFREE); // Limit side-to-side tilt
 
 	// have a swing limit will cause fall over while moving and rotating
-	// // Set swing limits (±15 degrees)
+	// // Set swing limits (+/-15 degrees)
 	// PxJointLimitCone swingLimit(PxPi / 36.f, PxPi / 36.f);
 	// PxJointAngularLimitPair limitPair(-PxPi / 36.f, PxPi / 36.f);
 	// joint->setTwistLimit(limitPair);
@@ -2011,7 +2011,7 @@ void Crawler::ApplyLinearVelocityToAllRigidBodies()
 		Joint* joint = pair.second;
 		if (joint->m_rigidActor)
 		{
-			Vec3 dir = GetRandomDirectionInCone(m_lastBlowDir, m_deflectionAngle);
+			Vec3 dir = g_rng->GetRandomDirectionInCone(m_lastBlowDir, m_deflectionAngle);
 			// float mass = joint->m_rigidActor->getMass();
 			// PxVec3 pos = joint->m_rigidActor->getGlobalPose().p;
 			// Vec3 forceInGame = g_rng->RollRandomFloatInRange(m_blowAcceration_min, m_blowAcceration_max) * dir * mass;

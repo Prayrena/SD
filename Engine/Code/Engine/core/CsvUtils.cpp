@@ -1,6 +1,8 @@
 #include "Engine/core/CsvUtils.hpp"
 #include "Engine/core/FileUtils.hpp"
+#include "Engine/core/HeatMaps.hpp"
 #include "Engine/core/StringUtils.hpp"
+#include <cstdio>
 #include <string>
 
 //-----------------------------------------------------------------------------------------------
@@ -123,4 +125,39 @@ std::string ParseCsvValue(Strings const& row, int colIndex, char const* defaultV
 	if (colIndex < 0 || colIndex >= (int)row.size() || row[colIndex].empty())
 		return defaultValue;
 	return row[colIndex];
+}
+
+//-----------------------------------------------------------------------------------------------
+bool WriteTileHeatMapToCsvImageData(std::string const& filePath, TileHeatMap const& heatMap, char const* valueHeader)
+{
+	if (heatMap.m_dimensions.x <= 0 || heatMap.m_dimensions.y <= 0)
+	{
+		return false;
+	}
+
+	int const totalCells = heatMap.m_dimensions.x * heatMap.m_dimensions.y;
+	if ((int)heatMap.m_values.size() < totalCells)
+	{
+		return false;
+	}
+
+	char const* header = (valueHeader != nullptr && valueHeader[0] != '\0') ? valueHeader : "value";
+	std::string csv;
+	csv.reserve((size_t)totalCells * 24);
+	csv += "col,row,";
+	csv += header;
+	csv += "\n";
+
+	char lineBuffer[128];
+	for (int row = 0; row < heatMap.m_dimensions.y; ++row)
+	{
+		for (int col = 0; col < heatMap.m_dimensions.x; ++col)
+		{
+			int const idx = col + row * heatMap.m_dimensions.x;
+			snprintf(lineBuffer, sizeof(lineBuffer), "%d,%d,%.9g\n", col, row, heatMap.m_values[idx]);
+			csv += lineBuffer;
+		}
+	}
+
+	return FileWriteFromString(csv, filePath);
 }

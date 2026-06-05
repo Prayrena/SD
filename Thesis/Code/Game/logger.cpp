@@ -4,6 +4,7 @@
 
 #include "ThirdParty/OpenXR/Application/pch.h"
 #include "logger.h"
+#include <chrono>
 #include <debugapi.h>
 #include <sstream>
 
