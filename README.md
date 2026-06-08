@@ -34,6 +34,15 @@ Keep this folder structure when cloning or moving the repository.
 - MSVC toolset compatible with the project files
 - Git LFS for large art, audio, font, and model assets
 
+After cloning, make sure Git LFS has downloaded the actual asset files:
+
+```powershell
+git lfs install
+git lfs pull
+```
+
+Without Git LFS, files such as PNGs, models, audio, DLLs, and libraries may remain small text pointer files that the engine cannot load.
+
 ## Opening A Project
 
 Open the solution for the game or test project you want to work on, for example:
@@ -45,6 +54,8 @@ MathUnitTests\MathUnitTests.sln
 ```
 
 The solution includes the game project and references the shared engine project in `Engine/`.
+
+Each tracked game project launches the executable copied into its `Run/` folder and uses that folder as its working directory. Runtime paths such as `Data/Images/...` and `Data/Fonts/...` are therefore resolved from `<Project>/Run/Data/`.
 
 ## GitHub Publishing Notes
 

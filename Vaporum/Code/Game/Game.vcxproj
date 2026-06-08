@@ -391,6 +391,11 @@
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <PropertyGroup>
+    <LocalDebuggerCommand>$(ProjectDir)..\..\Run\$(TargetFileName)</LocalDebuggerCommand>
+    <LocalDebuggerWorkingDirectory>$(ProjectDir)..\..\Run\</LocalDebuggerWorkingDirectory>
+    <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
+  </PropertyGroup>
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
 </Project>
